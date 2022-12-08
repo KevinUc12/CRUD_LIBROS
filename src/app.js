@@ -10,7 +10,7 @@ const app = express();
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
 
 // Settings
-app.set("port", config.PORT);
+app.set('port',process.env.PORT || 5000);
 app.set("views", path.resolve(__dirname, "views"));
 app.set("view engine", "ejs");
 
